@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #2f1893;
+    font-family: "DM Sans", sans-serif;
+    padding: 10vh 13vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header div h3{
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+nav{
+    display: flex;
+    gap: 31px;
+    align-items: center;
+}
+nav:hover {
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.firstA{
+    opacity: 30%;
+}
+
+.btn_purchase{
+    border: 0px solid rgb(255, 86, 114);
+    border-radius: 50px;
+    background-color: rgb(255, 86, 114);
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn_purchase:hover {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 900px){
+    body{
+        padding: 10vh 13vw;
+        max-width: fit-content;
+
+    }
+
+    header{
+        gap: 12vw;
+        width: 900px;
+        padding-right: 13vw;
+
+    }
+
+    header div h3{
+       width: 120px;
+}
+
+
+}
+
+
+
+@media (max-width: 599px){
+     
+    body{
+        padding: 10vh 13vw;
+        max-width: fit-content;
+
+    }
+    
+    header{
+        width: 230vw;
+        padding-right: 12vw;
+    }
+
+    header div h3{
+    font-size: 43px;
+    width: 210px;
+    }
+
+    a{
+      font-size: 30px;
+    }
+
+    .btn_purchase{
+    width: 160px;
+    height: 60px;
+    font-size: 30px;
+}
+}
+
+@media (max-width: 408px){
+
+    body{
+         padding-right: 12vw;
+    }
+     
+    header{
+        /* padding-right: 12vw; */
+        gap: 0px;
+    }
+
+}
