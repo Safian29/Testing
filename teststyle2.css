@@ -58,6 +58,11 @@ a{
     cursor: pointer;
 }
 
+.menu{
+    display: none;
+    
+}
+
 
 
 @media (max-width: 900px){
@@ -113,14 +118,21 @@ a{
 }
 
 @media (max-width: 408px){
-
-    body{
-         padding-right: 12vw;
-    }
      
     header{
-        /* padding-right: 12vw; */
+        padding-right: 20vw;
         gap: 0px;
+    }
+
+    a, .btn_purchase{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        width: 60px;
+        height: 60px;
+
     }
 
 }
