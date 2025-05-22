@@ -4,25 +4,36 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    border: 0px solid black;
 }
 
 body{
     background: #2f1893;
     font-family: "DM Sans", sans-serif;
-    padding: 10vh 13vw;
-    height: 500vh;
+    padding: 10vh 11vw 10vh 11vw; 
+    width: fit-content;
+    height: fit-content;
+}
+
+.container{
+    width: 76vw;
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 header div h3{
     color: white;
     font-weight: 700;
     font-size: 24px;
+}
+
+.hDiv{
+    width: 130px;
 }
 nav{
     display: flex;
@@ -45,9 +56,8 @@ a{
 }
 
 .btn_purchase{
-    border: 0px solid rgb(255, 86, 114);
-    border-radius: 50px;
-    background-color: rgb(255, 86, 114);
+    border-radius: 100px;
+    background-color: #E93A7D;
     width: 120px;
     height: 40px;
     color: white;
@@ -61,90 +71,379 @@ a{
 
 .menu{
     display: none;
-    
-}
-
-
-
-@media (max-width: 900px){
-    body{
-        padding: 10vh 13vw;
-        max-width: fit-content;
-
-    }
-
-    header{
-        gap: 12vw;
-        width: 900px;
-        padding-right: 13vw;
-
-    }
-
-    header div h3{
-       width: 120px;
-}
-
-
-}
-
-
-
-@media (max-width: 599px){
-     
-    body{
-        padding: 10vh 13vw;
-        max-width: fit-content;
-
-    }
-    
-    header{
-        width: 230vw;
-        padding-right: 12vw;
-    }
-
-    header div h3{
-    font-size: 43px;
-    width: 210px;
-    }
-
-    a, .btn_purchase{
-        display: none;
-    }
-
-    .menu{
-        display: block;
-        width: 60px;
-        height: 60px;
-
-    }
-
-    /* a{
-      font-size: 30px;
-    }
-
-    .btn_purchase{
-    width: 160px;
+    width: 60px;
     height: 60px;
-    font-size: 30px;
-} */
+    
 }
 
-@media (max-width: 408px){
+/* MAIN */
+.mainTag{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    gap: 9%;
+}
+
+/* LEFT */
+
+.left{
+    width: 44%;
+    color: white;
+}
+
+.leftHead{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-top: 17px;
+}
+
+.leftTextDiv{
+  width: 85%;
+  margin-top: 28px;
+}
+
+.leftText{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.leftBtn{
+    font-size: 18px;
+    font-weight: 500;
+    width: 157px;
+    height: 50px;
+    background-color: #E93A7D;
+    border-radius: 100px;
+    color: white;
+    margin-top: 49px;
+
+}
+
+/* RIGHT */
+
+.right{
+    width: 47%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 40px 30px 40px;
+    
+}
+
+.rightHead{
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    color: #1E0E62;
+}
+
+.inp1, .inp2{
+    color: #151439;
+    opacity: 70%;
+    font-size: 18px;
+    font-weight: 500;
+    width: 25.7vw;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid #1514392d;
+    padding-left: 30px;
+    margin-left: 22px;
+
+    
+}
+
+.inp1{
+    margin-top: 28px;
+}
+
+.inp2{
+    margin-top: 21px;
+}
+
+.checkArea{
+    display: flex;
+    gap: 37px;
+    margin: 31px 0px;
+    margin-left: 22px;
+}
+
+.check{
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    accent-color: #25DAC5;
+}
+
+.checkP{
+    font-weight: 400px;
+    font-size: 16px;
+    color: #2c3e5071;
+    opacity: 40px;
+}
+
+.signin1{
+    font-size: 18px;
+    font-weight: 500;
+    width: 25.7vw;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background-color: #482BE7;
+    border-radius: 100px;
+    margin-left: 22px;
+    margin-bottom: 13px;
+}
+
+.divider {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(131, 131, 131, 0.543);
+  display: flex;
+  align-items: center;
+  margin: 7px 0px;
+
+}
+
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 1px;
+  background-color: rgba(131, 131, 131, 0.148);
+  margin: 5px;
+}
+
+.signin2{
+    font-size: 18px;
+    font-weight: 500;
+    width: 25.7vw;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background-color: #1DA1F2;
+    border-radius: 100px;
+    margin-left: 22px;
+    margin-top: 13px;
+}
+
+.last_part{
+    display: flex;
+    margin: 30px 0px 30px 45px;
+    gap: 0.7vw;
+}
+
+.rA1div{
+    width: 215px;
+}
+
+.rA2div{
+    width: 56px;
+}
+
+.rightA1{
+    color: #15143966;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.rightA2{
+    color: #25DAC5;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+
+
+/* First responsiveness */
+@media (max-width: 1124px){
+
+    .last_part{
+    margin-left: 22px;
+}
+    .rightA1, .rightA2{
+          font-size: 16px;
+}
+
+}
+
+/* Second responsiveness */
+@media (max-width: 1100px){
+
+
+    .last_part, .signin2, .signin1, .inp1, .inp2{
+    margin-left: 10px;
+}
+    .checkArea{
+    gap: 16px;
+}
+
+    .checkP{
+    font-size: 14px;
+}
+
+}
+
+/* Third responsiveness */
+@media (max-width: 957px){
      
-    header{
-        padding-right: 20vw;
-        gap: 0px;
+    .mainTag{
+        display: block;
     }
+
+    .left{
+    width: 60%;
+    margin-bottom: 80px;
+    }
+    
+    .leftHead{
+    font-size: 45px;
+    }
+
+    .leftTextDiv{
+    width: 100%;
+    }
+
+    .right{
+    margin: auto;
+    width: 80%;
+    }
+    
+    .signin2, .signin1, .last_part, .inp1, .inp2{
+    width: 45.7vw;
+    margin-left: 22px;
+    }
+
+    .checkArea{
+    gap: 37px;
+    }
+
+    .checkP, .rightA1, .rightA2{
+    font-size: 18px;
+    }
+
+
+}
+
+/* Fourth responsiveness */
+
+@media (max-width: 855px){
+    .menu{
+        display: block;
+    }
+
 
     a, .btn_purchase{
         display: none;
     }
 
-    .menu{
+    .rightA1, .rightA2{
         display: block;
-        width: 60px;
-        height: 60px;
+    }
+}
 
+/* Fifth responsiveness */
+@media (max-width: 750px){
+     
+    .signin2, .signin1, .last_part, .inp1, .inp2{
+    margin-left: 11.5px;
+    }
+}
+
+/* Sixth responsiveness */
+@media (max-width: 691px){
+
+    .mainTag{
+    margin-top: 45px;
+}
+
+    .leftHead{
+        font-size: 37px;
+        line-height: 50px;
+    }
+
+    .leftBtn{
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+}
+      
+    .checkArea{
+    gap: 16px;
+}
+
+    .checkP, .rightA1, .rightA2{
+    font-size: 14px;
+}
+}
+/* Seventh responsiveness */
+@media (max-width: 600px){
+
+    .left{
+        width: 85%;
+    }
+
+    .right{
+    width: 100%;
+    }
+    
+    .rightHead{
+    font-size: 27px;
+    }
+
+    .inp1, .inp2{
+    font-size: 14px;
+    width: 50vw;
+    height: 40px;
+    padding-left: 30px;
+    margin-left: 35px;
+    }
+
+    .signin1, .signin2{
+    font-size: 14px;
+    width: 50vw;
+    height: 40px;
+    margin-left: 35px;
+    }
+
+    .checkArea, .last_part{
+        margin-left: 35px;
+    }
+
+}
+
+/* Eight responsiveness */
+@media (max-width: 550px){
+
+    .inp1, .inp2, .signin1, .signin2, .checkArea, .last_part{
+        margin-left: 25px;
+    }
+
+}
+
+/* Ninth responsiveness */
+@media (max-width: 500px){
+
+    .inp1, .inp2, .signin1, .signin2, .checkArea, .last_part{
+        margin-left: 16px;
+    }
+
+    .last_part{
+    display: block;
+    }
+
+    .rightA2{
+        margin-top: 10px;
+    }
+
+}
+
+/* Tenth responsiveness */
+@media (max-width: 420px){
+
+    .inp1, .inp2, .signin1, .signin2, .checkArea, .last_part{
+        margin-left: 10px;
     }
 
 }
